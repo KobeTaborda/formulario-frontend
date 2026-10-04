@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi primer formulario</title>
+</head>
+<body>
+    <center>
+        <img src="tdea.png" alt="Logo Tecnológico de Antioquia">
+    
+    <div style="text-align: center;">
+        <p>Tecnológico de Antioquia - Institución Universitaria</p>
+        <h2>Mi primer formulario</h2>
+    </div>
+    <form>
+        <table>
+            <tr>
+                <td><label for="tipoDoc">Tipo de documento</label></td>
+                <td>
+                    <select id="tipoDoc" name="tipoDoc" required>
+                        <option value="">Seleccione...</option>
+                        <option value="CC">Cedula de Ciudadania</option>
+                        <option value="TI">Tarjeta de Identidad</option>
+                        <option value="CE">Cedula de Extranjeria</option>
+                        <option value="PA">Pasaporte</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="numDoc">Número de documento</label></td>
+                <td><input type="number" id="numDoc" name="numDoc" required></td>
+            </tr>
+            <tr>
+                <td><label for="nombres">Nombres</label></td>
+                <td><input type="text" id="nombres" name="nombres" required></td>
+            </tr>
+            <tr>
+                <td><label for="apellidos">Apellidos</label></td>
+                <td><input type="text" id="apellidos" name="apellidos" required></td>
+            </tr>
+            <tr>
+                <td><label for="direccion">Dirección</label></td>
+                <td><input type="text" id="direccion" name="direccion"></td>
+            </tr>
+            <tr>
+                <td><label for="ciudad">Ciudad</label></td>
+                <td>
+                    <select id="ciudad" name="ciudad">
+                        <option value="">Seleccione...</option>
+                        <option value="Medellin">Medellin</option>
+                        <option value="Itagui">Itagui</option>
+                        <option value="Envigado">Envigado</option>
+                        <option value="Bello">Bello</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="fechaNac">Fecha de nacimiento</label></td>
+                <td><input type="date" id="fechaNac" name="fechaNac" required></td>
+            </tr>
+            <tr>
+                <td><label for="correo">Correo</label></td>
+                <td><input type="email" id="correo" name="correo" required></td>
+            </tr>
+        </table>
+        <br>
+        <input type="button" id="btnGuardar" value="Guardar">
+        <input type="button" id="btnActualizar" value="Actualizar" disabled>
+        <input type="button" id="btnEliminar" value="Eliminar" disabled>
+    </form>
+</center>
+    <br><br>
+    <table id="tablaPersonas" border="1" style="width: 100%; text-align: center; border-collapse: collapse;">
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
