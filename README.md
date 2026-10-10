@@ -1,7 +1,7 @@
 # Formulario de personas — Frontend
 
 Formulario en HTML + JavaScript que realiza el CRUD de personas consumiendo
-el backend **mi-servidor** (Node.js + Express + MySQL).
+el backend **mi-servidor** (Node.js + Express + Sequelize, MySQL o SQL Server).
 
 ## Cómo ejecutarlo
 
